@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unamjorge.practicas.mascotapetagram.FavoritasMascota">
+
+
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/action_bar">
+    </include>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sfiMirefres"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_below="@+id/miActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="60dp"
+                android:layout_below="@+id/miActionBar"
+                android:id="@+id/rvTaxonomia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</android.support.constraint.ConstraintLayout>
